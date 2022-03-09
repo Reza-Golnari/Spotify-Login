@@ -16,7 +16,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: $color-bg;
+  background-color: $color-primary;
   font-size: 16px;
 }
 
@@ -29,12 +29,12 @@ main {
   padding: 20px;
 
   h1 {
-    color: #fff;
+    color: #eee;
     text-align: center;
     letter-spacing: 1px;
   }
   p {
-    color: #fff;
+    color: #eee;
     letter-spacing: 0.5px;
     margin: 15px 0;
     span {
