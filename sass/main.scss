@@ -3,7 +3,6 @@
 $color-primary: #2a2c31;
 $color-secondary: #589235;
 $color-bg: #0d0e10;
-$color-white: #ffffff;
 
 * {
   margin: 0;
@@ -17,4 +16,49 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  background-color: $color-bg;
+  font-size: 16px;
+}
+
+main {
+  width: 500px;
+  height: 60vh;
+  background-color: $color-bg;
+  border-radius: 20px;
+  box-shadow: 0 0px 25px rgba(#000000, 0.5);
+  padding: 20px;
+
+  h1 {
+    color: #fff;
+    text-align: center;
+    letter-spacing: 1px;
+  }
+  p {
+    color: #fff;
+    letter-spacing: 0.5px;
+    margin: 15px 0;
+    span {
+      position: relative;
+      color: $color-secondary;
+      cursor: pointer;
+
+      &::before {
+        content: "";
+        position: absolute;
+        bottom: -1px;
+        width: 100%;
+        height: 1px;
+        background-color: $color-secondary;
+        transform: scale(0);
+        transition: all 400ms;
+        border-radius: 5px;
+      }
+
+      &:hover {
+        &::before {
+          transform: scale(1);
+        }
+      }
+    }
+  }
 }
