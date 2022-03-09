@@ -9,6 +9,11 @@ $color-bg: #0d0e10;
   padding: 0;
   font-family: "Roboto", sans-serif;
   box-sizing: border-box;
+
+  *::selection {
+    background-color: $color-primary;
+    color: $color-secondary;
+  }
 }
 
 body {
@@ -22,11 +27,11 @@ body {
 
 main {
   width: 500px;
-  height: 60vh;
+  height: 55vh;
   background-color: $color-bg;
   border-radius: 20px;
   box-shadow: 0 0px 25px rgba(#000000, 0.5);
-  padding: 20px;
+  padding: 30px;
 
   h1 {
     color: #eee;
@@ -36,7 +41,7 @@ main {
   p {
     color: #eee;
     letter-spacing: 0.5px;
-    margin: 15px 0;
+    margin: 20px 0;
     span {
       position: relative;
       color: $color-secondary;
@@ -58,6 +63,50 @@ main {
         &::before {
           transform: scale(1);
         }
+      }
+    }
+  }
+  form {
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+    gap: 10px;
+
+    .input {
+      all: unset;
+      padding: 15px 10px;
+      background-color: $color-primary;
+      border-radius: 5px;
+      color: #eee;
+      cursor: pointer;
+    }
+
+    div {
+      display: flex;
+      font-size: 0.9em;
+      justify-content: space-between;
+      span {
+        display: flex;
+        align-items: center;
+        column-gap: 10px;
+      }
+    }
+
+    .btn {
+      all: unset;
+      padding: 15px 10px;
+      background-color: $color-secondary;
+      border-radius: 5px;
+      text-align: center;
+      color: #eee;
+      border: 1px solid $color-secondary;
+      transition: all 0.2s;
+      cursor: pointer;
+
+      &:hover {
+        background-color: $color-bg;
+        color: $color-secondary;
+        box-shadow: 0 1px 5px rgba($color-secondary, 0.4);
       }
     }
   }
