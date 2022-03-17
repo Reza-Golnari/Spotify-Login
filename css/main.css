@@ -9,7 +9,7 @@ main { width: 500px; height: 55vh; background-color: #0d0e10; border-radius: 20p
 
 main h1 { color: #eee; text-align: center; letter-spacing: 1px; }
 
-main p { color: #eee; letter-spacing: 0.5px; margin: 20px 0; }
+main p { text-align: center; color: #eee; letter-spacing: 0.5px; margin: 20px 0; }
 
 main p span { position: relative; color: #589235; cursor: pointer; }
 
@@ -24,6 +24,8 @@ main form .input { all: unset; padding: 15px 10px; background-color: #2a2c31; bo
 main form div { display: flex; font-size: 0.9em; justify-content: space-between; }
 
 main form div span { display: flex; align-items: center; column-gap: 10px; }
+
+main form div a { color: #eee; display: flex; align-items: center; }
 
 main form .btn { all: unset; padding: 15px 10px; background-color: #589235; border-radius: 5px; text-align: center; color: #eee; border: 1px solid #589235; transition: all 0.2s; cursor: pointer; }
 

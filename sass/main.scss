@@ -39,6 +39,7 @@ main {
     letter-spacing: 1px;
   }
   p {
+    text-align: center;
     color: #eee;
     letter-spacing: 0.5px;
     margin: 20px 0;
@@ -89,6 +90,12 @@ main {
         display: flex;
         align-items: center;
         column-gap: 10px;
+      }
+      a {
+        color: #eee;
+        display: flex;
+        align-items: center;
+        text-decoration: none;
       }
     }
 

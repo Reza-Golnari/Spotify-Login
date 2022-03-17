@@ -13,16 +13,30 @@
       <p>Don't have an account? <span>sign in</span></p>
       <!-- stats form -->
       <form>
-        <input type="text" placeholder="User Name" class="input inputUser" />
-        <input type="text" placeholder="Password" class="input inputWord" />
+        <input
+          type="text"
+          placeholder="User Name"
+          class="input"
+          id="inputUser"
+          required
+        />
+        <input
+          type="text"
+          placeholder="Password"
+          class="input"
+          id="inputWord"
+          required
+        />
         <div class="box-check">
           <span>
             <input type="checkbox" />
             <p>Keep me logged in</p>
           </span>
-          <p>Forgot Password?</p>
+          <a href="#" class="forgot" id="forgot">Forgot Password?</a>
         </div>
-        <button type="button" class="btn">Sign in</button>
+        <button type="button" class="btn" id="btn" onclick="Shart()">
+          Sign in
+        </button>
       </form>
       <!-- end form -->
     </main>
